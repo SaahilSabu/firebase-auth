@@ -26,7 +26,7 @@ function UpdateProfile() {
     if (passwordRef.current.value) {
       promises.push(updatePassword(passwordRef.current.value));
     }
-    Promise.all(promises)
+    Promise.all(promises) //refer promises on the internet
       .then(() => {
         navigate("/");
       })

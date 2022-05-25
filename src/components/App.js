@@ -18,6 +18,7 @@ function App() {
         <BrowserRouter>
           <AuthProvider>
             <Routes>
+          {/* refer private routes on the internet */}
               <Route
                 path="/"
                 element={

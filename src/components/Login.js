@@ -4,12 +4,12 @@ import { useAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
-  let navigate = useNavigate();
-  const emailRef = useRef();
+  let navigate = useNavigate(); //navigate is used to redirect
+  const emailRef = useRef(); // refs are like useState but does not rerender the page like use State
   const passwordRef = useRef();
   const { login } = useAuth();
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); 
   async function handleSubmit(e) {
     e.preventDefault();
     try {
